@@ -53,6 +53,7 @@ To bridge the feedback gap, **Sat-O-Meter** ingested three distinct operational 
 └────────────────────────────────────────────────────────────────────────────────────────┘
 
 ```
+![Sat-O-Meter Predictive Architecture & Data Pipeline](./Assets/09-Sat-O-Meter-Architecture-Pipeline.jpeg)
 
 ### Technical Component Breakdown:
 1. **Avaya Telemetry Parser:** Ingested daily call metrics, evaluating hold times, transfer counts, call duration, and wrap-up times.
@@ -62,6 +63,7 @@ To bridge the feedback gap, **Sat-O-Meter** ingested three distinct operational 
 ---
 
 ## 3. Measurable Business Results & Operational Impact:
+![Sat-O-Meter Predictive Dashboard & Triage Suite](./Assets/09-Sat-O-Meter-Dashboard-Suite.jpeg)
 
 | Performance Metric | 🛑 Baseline State (Pre-Sat-O-Meter) | 🎯 Post-Deployment State (Sat-O-Meter) | 💡 Strategic Value |
 | --- | --- | --- | --- |
