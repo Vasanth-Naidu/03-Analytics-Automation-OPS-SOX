@@ -56,9 +56,10 @@ As both the Operations Manager facing floor friction and the hands-on hardware/s
 │  • Custom Printed Circuit Board (PCB) with Relay Switches                              │
 │  • Isolated Dedicated Power Cabling (Bypassing Main Enterprise UPS System)             │
 │  • 14-Unit Floor Traffic Light Matrix (Physical 230V Red / Yellow / Green Bulbs)       │
-└────────────────────────────────└───────────────────────────────────────────────────────┘
+└────────────────────────────────────────────────────────────────────────────────────────┘
 
 ```
+![VQM End-to-End System & Hardware Architecture Pipeline](./Assets/10-VQM-System-Hardware-Architecture.jepg)
 
 ### Technical, Mathematical & Hardware Governance Breakdown:
 
