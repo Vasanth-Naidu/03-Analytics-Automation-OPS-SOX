@@ -29,6 +29,8 @@
 * **Tier-1 QA Audit:** The system automatically selects and routes a **10% stratified sample** of rep productivity to the QA team for auditing.
 * **Rebooking & QA Re-entry Loop:** Any order failing QA is automatically directed to the Rebooking team for rectification. Once rebooked, the order is pushed back into the online production queue and re-enters the QA audit cycle.
 * **Level-2 Trainer Audits (QA of QA):** Process Trainers perform 100% audit checks on all QA-identified errors while simultaneously conducting a **5% sample audit** on general QA team entries ("QA of QA").
+<!-- Placement: Section 2.1 - Multi-Tier QA Sampling Framework -->
+![DBox Multi-Tier QA Sampling Flowchart](./Assets/11-DBox-Multi-Tier-QA-Sampling-Flowchart.png)
 * **Closed-Loop Retraining:** Process Trainers utilise error findings from Level-2 audits and Rebooking trends to drive targeted retraining and reinforce critical process updates.
 
 ```text
@@ -85,9 +87,14 @@
 +-----------------------------------------------------------------------------------+
 
 ```
+<!-- Placement: Section 2.1 - Complete End-to-End Ecosystem Process Cycle -->
+![DBox End-to-End Process Ecosystem Architecture](./Assets/11-DBox-End-To-End-Process-Ecosystem-Architecture.png)
 
 #### 2.2 Agile UI & System Module Architecture:
 Built using a robust split-database model (1 central back-end DB connected to a modular VBA/ DAO front-end), the system was iteratively engineered in an agile mode based on continuous user feedback across nine core modules:
+
+<!-- Placement: Section 2.2 - Agile UI & System Module Architecture -->
+![DBox MS Access Split-Database Schema](./Assets/11-DBox-MS-Access-Split-Database-Schema.jpeg)
 
 * **Order Entry Form:** Primary workspace for Online Order Booking Reps to process incoming orders.
 * **Order Search Form:** Centralised lookup tool for tracking general order status, history, and details.
@@ -114,6 +121,9 @@ Built using a robust split-database model (1 central back-end DB connected to a 
 
 ### 4. Measurable Business Results & Operational Impact:
 
+<!-- Placement: Section 3 / Section 4 - Analytics & Business Results -->
+![DBox Pareto Analytics & Leadership Dashboard](./Assets/11-DBox-Pareto-Analytics-Dashboard.jpeg)
+
 * **Unified Operational Lifecycle:** Successfully transformed disparate order booking, auditing, and rebooking routines into a single, seamless MS Access ecosystem.
 * **Closed-Loop Quality Governance:** Established complete end-to-end quality assurance by ensuring all failed orders were rebooked, re-audited, and analysed by trainers for root cause.
 * **Data-Driven Process Optimisation:** Enabled leadership and trainers to leverage Pareto analytics and root-cause dashboards, converting audit findings directly into targeted retraining programs.
@@ -127,5 +137,6 @@ Built using a robust split-database model (1 central back-end DB connected to a 
 * **Agile Product Delivery:** User-centric iterative development, rapid prototyping, feedback incorporation, and multi-interface deployment.
 * **Quality Assurance & Process Design:** Closed-loop quality control loops, stratified sampling implementation, and Level-2 oversight architecture.
 * **Operational Analytics & Governance:** Pareto analysis, cross-functional productivity reporting, role-based access security, and SOX compliant maintenance scheduling.
+
 
 ---
