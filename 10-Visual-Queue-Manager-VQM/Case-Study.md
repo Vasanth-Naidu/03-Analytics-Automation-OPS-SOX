@@ -1,83 +1,101 @@
-# 📊 Project 10: Visual Queue Manager (VQM) — Near Real-Time Floor Telemetry & Capacity Orchestration Engine
+# 📊 Project 10: Visual Queue Manager (VQM) — Hardware-Integrated Automated Floor Telemetry & Physical Traffic Light Control Engine
 
 ## Executive Overview:
 
-* **Enterprise Context:** Dell Technologies (Global Customer Care & Operations)
+* **Enterprise Context:** Dell Technologies (EMEA Online Operations — DIS Hyderabad)
 * **Role:** Operations Manager & End-to-End Systems Architect, Developer, Deployment & Maintenance Lead
-* **Core Value Delivered:** Concepted, engineered, deployed, and maintained **Visual Queue Manager (VQM)**, a desktop-based floor telemetry and capacity orchestration platform built in MS Access and T-SQL. Operating as both the functional Operations Manager and sole system developer/maintenance lead, designed VQM to unify live telephony streams, case dispatch queues, and agent state metrics into a colour-coded visual command center, giving floor leads real-time control over intra-day operations.
+* **Core Value Delivered:** Concepted, engineered, deployed, and maintained **Visual Queue Manager (VQM)** as a core Lean/Six Sigma floor control innovation. Designed an MS Access telemetry engine that calculated real-time queue capacity across **36+ Order Broker & GEDIS queues** ($18 \times 7$ operations) processing Dell.com web store sales orders. Combined 15-minute Avaya CMS supervisor reports and Order Broker feeds to output hardware signals via a PC parallel printer port to a custom PCB, dynamically controlling ceiling-mounted physical traffic lights (Red/Yellow/Green) across the floor.
 * **Impact & Key Deliverables:**
-  * **Intra-Day Latency Elimination:** Replaced static 2-hour delayed interval reports with a live, 30-second refreshing visual telemetry feed of queue backlogs and agent activity.
-  * **Proactive SLA Protection:** Prevented queue spikes and SLA breaches by visually highlighting bottlenecked queues before holding thresholds were exceeded.
-  * **Intelligent Capacity Dispatch:** Enabled team leads to re-route volume and dynamically reassign agent skills with one click during unexpected volume spikes.
-* **Core Stack:** MS Access (Custom GUI Engine, Event Handlers & Local Data Cache), T-SQL (Automated Staging Views), Avaya Call Management System (CMS) Live Data Stream, Custom VBA Dispatch Algorithms.
+  * **Lean Velocity Optimisation:** Enabled the floor to hit the 0-to-1 hour Velocity metric with zero backlog across 36+ regional queues.
+  * **Mathematical Queue Thresholds:** Automated real-time Required OPH (Orders Per Hour) calculations ($y2 = x1/x2$) against target production baselines ($y1$), controlling agent batch-pulling behaviour (1, 3, or 5 orders at a time).
+  * **Hardware-Driven Visual Control:** Architected and phased a 14-unit physical ceiling traffic light matrix across the floor, driving self-organizing agent break and work discipline.
+  * **Frugal Innovation & High ROI:** Delivered enterprise-grade, floor-wide visual control using custom PCB relays and parallel-port triggers at a fraction of commercial display costs, executing a controlled 3-phase rollout from pilot to full 14-unit deployment.
+  * **Enterprise Infrastructure & Governance:** Secured executive POC approvals, engineered an isolated power distribution system bypassing corporate UPS backups, and passed quarterly electrical, fire, and safety department audits.
+* **Core Stack:** MS Access (Custom GUI & Logic Engine), Order Broker API/Staging, GEDIS, Avaya CMS Supervisor, LPT Parallel Port Hardware I/O, Custom PCB Relay Circuit, 230V Ceiling Light Matrix.
 
 ---
 
 ## 1. Operational Challenge & Floor Visibility Blindspots:
 
 ### Baseline Operational Friction:
-Managing multi-queue call centres across shifts suffered from severe operational lag and fragmented floor control:
+EMEA Online Operations at Dell DIS Hyderabad processed sales orders placed across EMEA web stores, requiring continuous $18 \times 7$ queue monitoring:
 
-* **Delayed Operational Telemetry:** Floor managers relied on 2-hour delayed static interval reports to track incoming volume, average speed of answer (ASA), and abandon rates.
-* **Blindspot Capacity Allocation:** Team leads could not see which agents were stuck in extended wrap-up, idle, or handling complex cases without physically walking the floor.
-* **Reactive SLA Triage:** By the time a volume spike appeared on interval reports, SLA thresholds were already breached and abandon rates had spiked.
-* **Siloed Operational Data:** Telephony queue states, CRM case backlogs, and agent attendance rosters operated in silos, forcing leads to manually combine data during live shifts.
+* **36+ Fragmented Order Queues:** Orders flowed into 36+ distinct regional queues within **Order Broker**, making manual tracking across queues inefficient and error-prone.
+* **Strict Velocity Metrics:** The floor operated under a strict **0 to 1-hour Velocity SLA**, where unhandled order fallout quickly turned into delivery delays.
+* **Manual Headcount & Queue Inspections:** Team leads spent significant shift time manually checking individual Order Broker queue volumes and walking the floor to count active agents.
+* **Uncoordinated Break Disruptions:** Without a shared visual queue status, agents took breaks or attended meetings during unexpected order volume surges, causing severe backlog accumulation.
 
 ---
 
-## 2. Solution Architecture & Dual-Hat Execution:
-
-As both the Operations Manager facing floor friction and the hands-on system developer, designed and built a direct telemetry pipeline from core telephony and case management databases into an interactive MS Access visual engine:
+## 2. Solution Architecture, Mathematical Logic & Hardware Integration:
+As both the Operations Manager facing floor friction and the hands-on hardware/software developer, designed a full-stack telemetry pipeline connecting live software feeds to physical ceiling lights:
 
 ```text
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
-│                               LIVE OPERATIONAL DATA STREAMS                            │
+│                        DATA INGESTION & LEAN CAPACITY FEEDS                            │
 │  ┌─────────────────────────┐   ┌───────────────────────────┐   ┌────────────────────┐  │
-│  │ 1. Avaya CMS Telemetry  │   │ 2. Live CRM Case Queue    │   │ 3. Shift Roster &  │  │
-│  │ (Live Calls & States)   │   │ (Backlog & Priority)      │   │ Agent Auxiliary    │  │
+│  │ 1. Order Broker         │   │ 2. GEDIS Sales Order      │   │ 3. Avaya CMS       │  │
+│  │    (36+ Queues x1)      │   │    System                 │   │    Supervisor (x2) │  │
 │  └────────────┬────────────┘   └─────────────┬─────────────┘   └─────────┬──────────┘  │
 └───────────────┼──────────────────────────────┼───────────────────────────┼─────────────┘
                 │                              │                           │
-                └──────────────────────────┬───┴───────────────────────────┘
-                                           ▼
+                └─────────────────────────────┬┴───────────────────────────┘
+                                              ▼
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
-│                  VQM TELEMETRY ENGINE & DISPATCH ENGINE (MS ACCESS / T-SQL)            │
+│                  VQM TELEMETRY & REQUIRED OPH ENGINE (MS ACCESS / T-SQL)               │
 ├────────────────────────────────────────────────────────────────────────────────────────┤
-│  • Automated 30-Second Micro-Batch Refresh & Local Data Caching                        │
-│  • Dynamic Threshold Evaluator & Colour-coded Heatmap Renderer                         │
-│  • Rule-Based Skill Re-Allocation & Capacity Dispatch Controller                       │
-└───────────────────────────────────────────┬────────────────────────────────────────────┘
-                                            ▼
+│  • Required OPH Calculation: y2 = x1 / x2 (Orders Available / Agents Available)        │
+│  • Threshold Evaluator against Target OPH (y1)                                         │
+│  • Parallel Port (LPT) Signal Generator Output Driver                                  │
+└─────────────────────────────────────────────┬──────────────────────────────────────────┘
+                                              │ (LPT Hardware Signal)
+                                              ▼
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
-│                           VQM VISUAL FLOOR COMMAND CENTER UI                           │
+│                  HARDWARE INTERFACE & ISOLATED POWER INFRASTRUCTURE                    │
 ├────────────────────────────────────────────────────────────────────────────────────────┤
-│  • Live Queue Heatmap Grid  • Real-Time Agent State Matrix   • 1-Click Skill Dispatch  │
-└───────────────────────────────────────────┴────────────────────────────────────────────┘
+│  • Custom Printed Circuit Board (PCB) with Relay Switches                              │
+│  • Isolated Dedicated Power Cabling (Bypassing Main Enterprise UPS System)             │
+│  • 14-Unit Floor Traffic Light Matrix (Physical 230V Red / Yellow / Green Bulbs)       │
+└────────────────────────────────└───────────────────────────────────────────────────────┘
 
 ```
 
-### Technical & Maintenance Component Breakdown:
+### Technical, Mathematical & Hardware Governance Breakdown:
 
-1. **Automated Telemetry Ingestion Layer:** Engineered 30-second delta updates from Avaya CMS and CRM databases into indexed T-SQL staging tables, isolating heavy queries from production systems.
-2. **Visual Heatmap & Threshold Engine:** Coded local evaluation routines for live metrics against predefined operational tolerances (Green = Normal, Amber = Warning, Red = SLA Breach Risk), instantly updating UI element colours.
-3. **One-Click Capacity Orchestration:** Developed custom VBA action handlers enabling supervisors to initiate rapid skill updates and reassign agents across queues directly from the dashboard view.
-4. **End-to-End Maintenance & Evolution:** Maintained database indexing, optimised query routines, and adapted business logic based on evolving shift structures and seasonal volume surges.
+1. **Mathematical Queue Capacity Engine:**
+Programmed an MS Access engine evaluating real-time operational capacity using the formula:
+
+$$\text{Required OPH } (y2) = \frac{\text{Orders Available } (x1)}{\text{Agents Available on Floor } (x2)}$$
+
+The required OPH ($y2$) was continuously evaluated against the Target OPH ($y1$, maximum orders an agent can process per hour) to calculate the probability of clearing the queue within 1 hour.
+
+2. **Automated Traffic Light Logic & Agent Rules:**
+* 🔴 **RED LIGHT ($y2 > 90\%$ of Target OPH):** High order volume backlog. Agents pull **5 orders at a time** from Order Broker. Personal breaks require Manager On Duty (MOD) approval.
+* 🟡 **YELLOW LIGHT ($60\% < y2 \le 90\%$ of Target OPH):** Medium volume. Agents pull **3 orders at a time** (MOD approval). Only emergency and dinner breaks permitted.
+* 🟢 **GREEN LIGHT ($y2 \le 60\%$ of Target OPH):** Normal state. Agents pull **1 order at a time**. Scheduled breaks, coaching, and offline training cleared.
+
+3. **Printer Port Hardware & PCB Architecture:**
+Coded low-level I/O routines sending bitwise signals through the PC parallel printer port (LPT) directly to a custom-fabricated PCB relay board.
+
+4. **Phased Scale & Infrastructure Safety:**
+* Scaled the hardware footprint via a structured 3-phase deployment from initial pilot to 14 light units across all regional workgroups.
+* Architected dedicated power wiring for the light matrix that strictly bypassed main enterprise UPS backups to protect core server infrastructure, backed by mandatory quarterly electrical, fire, and safety department certifications.
 
 ---
 
-## 3. The 3 Core Visual Modules of VQM:
+## 3. The 3 Core Visual Control Modules of VQM:
 
-### Module 1: Live Queue Telemetry Heatmap
-* **Features:** Colour-coded grid showing real-time call volume, longest wait time, current ASA, and abandon percentages across all active lines.
-* **Impact:** Immediate visual signal when any individual queue crosses normal operating thresholds.
+### Module 1: Order Broker & Avaya Live Telemetry Engine
+* **Features:** Ingests live order counts across 36+ Order Broker queues and active agent states from Avaya CMS, executing 1-hour queue clearance calculations every 15 minutes.
+* **Impact:** Replaces manual queue inspections with automated, mathematically verified capacity metrics.
 
-### Module 2: Agent State & Auxiliary Time Matrix
-* **Features:** Real-time view of individual agent status (In-Call, Wrap-Up, Idle, Aux/Break) with automated timer alerts for excessive wrap-up or hold durations.
-* **Impact:** Eliminates hidden floor leakage and provides instant visibility into available capacity.
+### Module 2: Hardware Printer Port PCB Relay Controller
+* **Features:** Converts software threshold states into physical electrical signals via LPT port to trigger high-voltage PCB relays.
+* **Impact:** Bridges software analytics to physical ceiling-mounted light arrays across the operational floor.
 
-### Module 3: Capacity Dispatch & Skill Re-Balancing Hub
-* **Features:** Interactive panel providing recommendations for cross-queue agent re-allocation based on live inflow velocities.
-* **Impact:** Reduces reaction time during unexpected volume surges from hours to minutes.
+### Module 3: Self-Organizing Agent Discipline Framework
+* **Features:** Prominent 14-unit physical Red/Yellow/Green light matrix visible to all floor agents.
+* **Impact:** Drives autonomous behavioral compliance—agents instantly know whether to pull 1, 3, or 5 orders, delay breaks, or take training without manager intervention.
 
 ---
 
@@ -85,17 +103,17 @@ As both the Operations Manager facing floor friction and the hands-on system dev
 
 | Performance Metric | 🛑 Baseline State (Pre-VQM) | 🎯 Post-Deployment State (VQM Engine) | 💡 Strategic Value |
 | --- | --- | --- | --- |
-| **Operational Data Recency** | 2-Hour Static Interval Reports | **30-Second Live Refresh** | Transformed floor control from reactive to real-time |
-| **SLA Breach Prevention** | Post-incident triage | **Proactive Threshold Alerts (Amber/Red)** | Drastic reduction in queue abandon rates |
-| **Intra-Day Re-Allocation Latency** | 45–60 minutes manual analysis | **<2 Minutes 1-Click Dispatch** | Rapid capacity response during sudden volume spikes |
-| **Floor Shrinkage & Leakage** | Untracked Aux/wrap-up delays | **Live Timer Highlights & Alerts** | Maximised available FTE production hours |
+| **Queue Velocity SLA** | Frequent backlog spikes across 36+ queues | **0-to-1 Hour Velocity Standard Consistently Met**<br> | Guaranteed zero backlog across all EMEA Online queues |
+| **Floor Discipline Signal** | Manual management announcements for breaks | **Physical PCB-Driven Traffic Light Matrix (14 Units)**<br> | Floor self-organizes order batching (1, 3, or 5) and breaks based on lights |
+| **Capacity Calculation** | Manual queue checks & physical headcounts | **Automated $y2 = x1/x2$ Required OPH Engine**<br> | Mathematically precise capacity management via Avaya/ Order Broker feeds |
+| **Infrastructure Safety** | Unapproved desktop add-ons | **Isolated Power Grid & Quarterly Fire/Safety Audits** | 100% compliance with corporate electrical and safety standards |
 
 ---
 
 ## 5. Key Competencies Demonstrated:
 
-* **Dual-Hat Leadership:** Combining direct operational ownership with full-stack desktop software development, deployment, and lifecycle maintenance.
-* **Floor Telemetry & Operational Design:** Translating high-velocity call centre metrics into actionable, intuitive visual interfaces.
-* **Rapid Application Architecture:** Developing scalable event-driven GUIs, data caches, and automation routines in MS Access, VBA, and T-SQL.
+* **Lean/Six Sigma Process Engineering:** Applying visual management principles to software-driven operational workflows.
+* **Full-Stack Systems & Hardware Engineering:** Combining software analytics (MS Access/T-SQL), mathematical logic, and low-level hardware integration (LPT port to custom PCB relays).
+* **Cross-Functional Governance & Frugal Innovation:** Securing executive approvals, executing a phased deployment, and maintaining quarterly electrical/fire safety audit sign-offs while delivering high-impact solutions with minimal CapEx.
 
 ---
