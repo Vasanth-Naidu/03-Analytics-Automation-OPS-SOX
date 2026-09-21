@@ -86,6 +86,8 @@ Coded low-level I/O routines sending bitwise signals through the PC parallel pri
 
 ## 3. The 3 Core Visual Control Modules of VQM:
 
+![VQM Physical Traffic Light Matrix & Self-Organizing Agent Discipline Board](./Assets/10-VQM-Physical-Traffic-Light-Matrix.jpeg)
+
 ### Module 1: Order Broker & Avaya Live Telemetry Engine
 * **Features:** Ingests live order counts across 36+ Order Broker queues and active agent states from Avaya CMS, executing 1-hour queue clearance calculations every 15 minutes.
 * **Impact:** Replaces manual queue inspections with automated, mathematically verified capacity metrics.
