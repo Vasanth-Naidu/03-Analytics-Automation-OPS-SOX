@@ -59,7 +59,7 @@ As both the Operations Manager facing floor friction and the hands-on hardware/s
 └────────────────────────────────────────────────────────────────────────────────────────┘
 
 ```
-![VQM End-to-End System & Hardware Architecture Pipeline](./Assets/10-VQM-System-Hardware-Architecture.jepg)
+![VQM End-to-End System & Hardware Architecture Pipeline](./Assets/10-VQM-System-Hardware-Architecture.jpeg)
 
 ### Technical, Mathematical & Hardware Governance Breakdown:
 
