@@ -27,7 +27,7 @@
 
 #### 2.1 Automated Ingestion, Validation & Recovery Architecture:
 * **FTP Excel Ingestion:** The engine automatically picks up daily raw CSat survey MS Excel files from the central repository FTP folders.
-![CSat Automated Ingestion & Roster Matching Schema](./Assets/12-ABO-CC-CSat-Automated-Ingestion-Roster-Matching-Schema.jpeg)
+![CSat Automated Ingestion & Roster Matching Schema](./Assets/12-ABO-CC-CSat-Automated-Ingestion-Roster-Matching-Schema.png)
 * **Employee Roster Cross-Referencing:** The system bounces incoming records against the internal employee database using VBA/ DAO routines to isolate surveys belonging strictly to ABO CC representatives.
 * **Score Threshold Isolation:**
 * **Detractors (Ratings 1–4):** Immediately flagged for urgent root-cause scrubbing and operational recovery.
@@ -94,7 +94,7 @@ Engineered in MS Access using a modular VBA/DAO model designed for high-speed pr
 ---
 
 ### 4. Measurable Business Results & Operational Impact:
-![ABO CC CSat Root-Cause Pareto Analytics Dashboard](./Assets/12-ABO-CC-CSat-Root-Cause-Pareto-Analytics-Dashboard.jpeg)
+![ABO CC CSat Root-Cause Pareto Analytics Dashboard](./Assets/12-ABO-CC-CSat-Root-Cause-Pareto-Analytics-Dashboard.png)
 * **Automated Data Processing:** Eliminated manual file downloads and roster checks by automating the ingestion of FTP Excel feeds directly into MS Access.
 * **Responsible Customer Recovery:** Enforced a culture of service accountability where managers proactively rectified customer issues within 24 hours, taking ownership of service failures regardless of initial score.
 * **Targeted Quality Remediation:** Enabled Process Trainers to utilise scrubbed error drivers directly, shifting coaching from generic recaps to high-impact 1-on-1 interventions for repeat CSat error generators.
