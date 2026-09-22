@@ -16,10 +16,9 @@
 ---
 
 ## 1. Why the Old Way Was Broken:
-
 To explain the flaw to frontline agents during floor enablement sessions, we used a simple academic analogy:
-* **Student A** takes 10 elementary quizzes and scores 90%.
-* **Student B** takes 3 advanced physics exams and scores 85%.
+   * **Student A** takes 10 elementary quizzes and scores 90%.
+   * **Student B** takes 3 advanced physics exams and scores 85%.
 
 Under the **legacy ranking system**, Student A was ranked higher simply because raw volume numbers were larger. This created severe friction on the operational floor:
 1. **Apples-to-Oranges Evaluation:** High-volume queues naturally experienced wide swings, while CSAT and Quality scores moved in tight percentage increments. High-volume swings completely drowned out quality.
@@ -29,8 +28,9 @@ Under the **legacy ranking system**, Student A was ranked higher simply because 
 ---
 
 ## 2. The Solution Architecture: Homogenised, Rationalised & Commensurated
-
 MSRF acts as an **intelligent, fair leveller** across four automated stages:
+
+![MSRF Ecosystem Architecture](./Assets/13-MSRF-Ecosystem-Architecture.png)
 
 ```text
 ┌──────────────────────────────────┐     ┌──────────────────────────────────┐
@@ -60,8 +60,9 @@ Where:
 * $\sigma$ = Standard deviation of the peer cohort
 * $\pm 3.0$ = Boundary caps to block extreme outlier gaming
 
-### The 3 Core Rules Built Into the Engine:
+![MSRF Statistical Normalization Curve](./Assets/13-MSRF-Statistical-Normalization-Curve.png)
 
+### The 3 Core Rules Built Into the Engine:
 1. **Directional Logic:** Flipped orientation automatically—recognising that for **CSAT/Quality**, *higher is better*, whereas for **Handle Time**, *lower is better*.
 2. **Peer-Group Normalisation ($Z$-Score):** Rather than evaluating raw scores, it measured standard deviation distances above or below the cohort mean for agents performing identical work types.
 3. **Outlier Safety Capping:** Bounded extreme values (between $-3.0\sigma$ and $+3.0\sigma$), ensuring overachievement on a single metric could not mask failure in customer satisfaction.
@@ -69,8 +70,9 @@ Where:
 ---
 
 ## 3. Change Management & Grassroots Floor Enablement
-
 A core driver of MSRF's success was how the analytics team approached change management:
+
+![MSRF Grassroots Change Management](./Assets/13-MSRF-Grassroots-Change-Management.png)
 
 ```text
 ┌─────────────────────────────────────────┐
@@ -97,14 +99,17 @@ A core driver of MSRF's success was how the analytics team approached change man
 
 ---
 
-## 4. Operational Modules & System Architecture
+## 4. Operational Modules & System Architecture:
+
 * **Module 1: Data Ingestion & Schema Alignment Engine** — Automatically pulled weekly performance and QA audit feeds into a unified processing pipeline.
 * **Module 2: MSRF Calculation Engine** — Applied directional target indexing, standard deviation transformations, and weighted composite scoring.
 * **Module 3: Multi-Level Executive Scorecard Suite** — Streamed transparent, decision-ready reports from individual rep scorecards up to site-level executive dashboards.
 
 ---
 
-## 5. Measurable Business Results & Operational Impact
+## 5. Measurable Business Results & Operational Impact:
+
+![MSRF Executive Leadership Dashboard](./Assets/13-MSRF-Executive-Leadership-Dashboard.png)
 
 | Performance Metric | 🛑 Legacy Model (Raw Averages) | 🎯 MSRF Engine (Commensurated Scale) | 💡 Operational Impact |
 | --- | --- | --- | --- |
@@ -120,6 +125,7 @@ A core driver of MSRF's success was how the analytics team approached change man
 * **Advanced Data Analytics & Applied Statistics:** Translating $Z$-scores, population variance, and outlier capping into practical enterprise solutions.
 * **Homogenised Performance System Architecture:** Designing rationalised, commensurated scoring frameworks across multi-faceted operational metrics.
 * **Strategic Change Management & Leadership:** Driving bottom-up floor adoption, demystifying complex statistics for non-technical teams, and securing executive endorsement.
-
-
 * **Automation & Enterprise Reporting:** Building automated analytics pipelines in Excel, VBA, and SQL to support multi-level leadership roll-ups.
+
+
+
