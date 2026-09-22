@@ -7,12 +7,10 @@
 * **Bottom-Up Grassroots Adoption Strategy:** Rather than imposing a top-down mandate, we conducted multiple interactive warmup and education sessions directly with floor reps. We demonstrated how the math protected them from unfair evaluations and queue biases, securing grassroots trust and buy-in *before* looping in and briefing executive leadership.
 * **The Big Problem:** Legacy ranking relied on raw percentage averages. Reps handling easy, high-volume requests artificially looked like "top performers," while reps tackling complex technical issues appeared as "low performers"—even with flawless quality and CSAT scores.
 * **The Solution:** Engineered the **Multi-Factor Stack Ranking Framework (MSRF)**—an automated engine that "grades on a curve" across heterogeneous metrics (CSAT, Speed, Volume, Quality). It neutralises queue disparities, stops system gaming, and provides an apples-to-apples performance comparison across the enterprise.
-
-
 * **Core Value Delivered:**
-* **Homogenised & Commensurated Metrics:** Standardised disparate metrics (seconds, percentages, survey scores) onto a single, fair comparative scale.
-* **Grassroots Buy-In & Cultural Shift:** Achieved 100% floor acceptance by demystifying the math for agents prior to executive rollout.
-* **Automated Leadership Roll-Ups:** Generated automated scorecards streaming performance transparently from Reps to Team Leads, Managers, and Directors.
+  * **Homogenised & Commensurated Metrics:** Standardised disparate metrics (seconds, percentages, survey scores) onto a single, fair comparative scale.
+  * **Grassroots Buy-In & Cultural Shift:** Achieved 100% floor acceptance by demystifying the math for agents prior to executive rollout.
+  * **Automated Leadership Roll-Ups:** Generated automated scorecards streaming performance transparently from Reps to Team Leads, Managers, and Directors.
 * **Tools & Stack:** Applied Statistics ($Z$-Score Normalisation, Standard Deviation Capping), MS Excel Analytics Architecture, VBA Automation, SQL Data Staging, Executive PowerPoint Integration.
 
 ---
@@ -35,20 +33,32 @@ Under the **legacy ranking system**, Student A was ranked higher simply because 
 MSRF acts as an **intelligent, fair leveller** across four automated stages:
 
 ```text
-┌──────────────────────────────────┐     ┌──────────────────────────────────┐     ┌──────────────────────────────────┐
-│    1. Homogenise Metric Data     │     │     2. Rationalise Performance   │     │    3. Commensurate & Apply Caps  │
-│  Convert speed, quality, & CSAT  │ ──> │   "Grade on a curve" against     │ ──> │ Bounded statistical capping     │
-│   onto one unified scale.        │     │    actual peer cohort averages.  │     │  blocks single-metric gaming.    │
-└──────────────────────────────────┘     └──────────────────────────────────┘     └──────────────────────────────────┘
-                                                                                                   │
-                                                                                                   ▼
-                                                                                      ┌──────────────────────────────────┐
-                                                                                      │  4. Grassroots & Exec Dashboard  │
-                                                                                      │ Transparent roll-up from Reps to │
-                                                                                      │  Team Leads & Operations Directors│
-                                                                                      └──────────────────────────────────┘
+┌──────────────────────────────────┐     ┌──────────────────────────────────┐
+│    1. Homogenise Metric Data     │     │     2. Rationalise Performance   │
+│  Convert speed, quality, & CSAT  │ ──> │   "Grade on a curve" against     │
+│   onto one unified scale.        │     │    actual peer cohort averages.  │
+└──────────────────────────────────┘     └────────────────┬─────────────────┘
+                ┌─────────────────────────────────────────┘
+                ▼
+┌──────────────────────────────────┐     ┌──────────────────────────────────┐
+│  3. Commensurate & Apply Caps    │     │  4. Grassroots & Exec Dashboard  │
+│ Bounded statistical capping      │ ──> │ Transparent roll-up from Reps to │
+│  blocks single-metric gaming.    │     │ Team Leads & Operations Directors│
+└──────────────────────────────────┘     └──────────────────────────────────┘
 
 ```
+### Core Statistical Model (\(Z\)-Score Normalisation)
+To level the playing field across metrics with completely different units (e.g., AHT seconds vs. CSAT percentages), the engine applies a bounded standard deviation transformation:
+
+ $$Z_i = \min \left( +3.0 \, \max \left( -3.0 \, \frac{R_i - \mu}{\sigma} \right) \right)$$ 
+
+Where:
+* $R_i$ = Target Achievement Ratio:
+  * **Higher-is-Better** (e.g., CSAT, Quality): $\frac{\text{Actual}}{\text{Target}}$
+  * **Lower-is-Better** (e.g., AHT, DSAT): (100% - Actual) / (100% - Target)
+* $\mu$ = Mean achievement across the peer cohort
+* $\sigma$ = Standard deviation of the peer cohort
+* $\pm 3.0$ = Boundary caps to block extreme outlier gaming
 
 ### The 3 Core Rules Built Into the Engine:
 
@@ -72,12 +82,12 @@ A core driver of MSRF's success was how the analytics team approached change man
 └────────────────────┬────────────────────┘      "grading on a curve" & fairness mechanics.
                      ▼
 ┌─────────────────────────────────────────┐
-│ PHASE 3: Rep Buy-In & Trust Sign-Off   │  --> Secured floor confidence that hard work & 
+│ PHASE 3: Rep Buy-In & Trust Sign-Off    │  --> Secured floor confidence that hard work & 
 └────────────────────┬────────────────────┘      complex cases were protected.
                      ▼
 ┌─────────────────────────────────────────┐
-│ PHASE 4: Executive Briefing & Rollout   │  --> Briefed leadership & deployed automated 
-└─────────────────────────────────────────┘      site-wide reporting dashboards.
+│ PHASE 4: Executive Briefing & Rollout   │  --> Briefed leadership & deployed rationalised 
+└─────────────────────────────────────────┘      site-wide productivity measurement system.
 
 ```
 
