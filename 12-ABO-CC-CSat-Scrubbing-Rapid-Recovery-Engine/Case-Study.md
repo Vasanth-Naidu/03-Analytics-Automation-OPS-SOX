@@ -27,6 +27,7 @@
 
 #### 2.1 Automated Ingestion, Validation & Recovery Architecture:
 * **FTP Excel Ingestion:** The engine automatically picks up daily raw CSat survey MS Excel files from the central repository FTP folders.
+![CSat Automated Ingestion & Roster Matching Schema](./Assets/12-ABO-CC-CSat-Automated-Ingestion-Roster-Matching-Schema.jpeg)
 * **Employee Roster Cross-Referencing:** The system bounces incoming records against the internal employee database using VBA/ DAO routines to isolate surveys belonging strictly to ABO CC representatives.
 * **Score Threshold Isolation:**
 * **Detractors (Ratings 1–4):** Immediately flagged for urgent root-cause scrubbing and operational recovery.
@@ -34,6 +35,8 @@
 * **Real-Time Alert Dispatch:** Triggers instant automated alert notifications to Email, Chat, and Voice Customer Care Managers based on operational routing rules.
 * **Mandatory 24-Hour Scrubbing:** Managers log into the scrubbing module, engage the customer, fix the underlying issue to uphold service responsibility, and log standardised root-cause categories.
 * **Process Trainer Feedback Loop:** Process Trainers review the scrubbed output to pull actual call drivers, triggering targeted 1-on-1 coaching for high CSat error generators and conducting floor-wide refresher training.
+
+![ABO CC CSat Recovery Ecosystem](./Assets/12-ABO-CC-CSat-Ecosystem-Architecture.png)
 
 ```text
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
@@ -65,6 +68,7 @@
 └────────────────────────────────────────────────────────────────────────────────────────┘
 
 ```
+![24-Hour SLA Scrubbing & Trainer Loop Flowchart](./Assets/12-ABO-CC-CSat-24Hr-SLA-Scrubbing-Trainer-Loop-Flowchart.png)
 
 #### 2.2 System Modules & Engine Functionality:
 
@@ -90,7 +94,7 @@ Engineered in MS Access using a modular VBA/DAO model designed for high-speed pr
 ---
 
 ### 4. Measurable Business Results & Operational Impact:
-
+![ABO CC CSat Root-Cause Pareto Analytics Dashboard](./Assets/12-ABO-CC-CSat-Root-Cause-Pareto-Analytics-Dashboard.jpeg)
 * **Automated Data Processing:** Eliminated manual file downloads and roster checks by automating the ingestion of FTP Excel feeds directly into MS Access.
 * **Responsible Customer Recovery:** Enforced a culture of service accountability where managers proactively rectified customer issues within 24 hours, taking ownership of service failures regardless of initial score.
 * **Targeted Quality Remediation:** Enabled Process Trainers to utilise scrubbed error drivers directly, shifting coaching from generic recaps to high-impact 1-on-1 interventions for repeat CSat error generators.
