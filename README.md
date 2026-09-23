@@ -21,7 +21,7 @@
 
 ## 2. In-House Automation Buildout & Governance Framework:
 
-1. **Sat-O-Meter Predictive Modeling** — Flagship statistical forecasting tool in MS Access ingesting three disparate operational streams (telemetry, historical 3-year survey text scrubs, and real-time call attributes) via Multi-Variate Non-Linear Regression & ARIMAX modeling to predict CSat scores within a $\pm 5\%$ variance window weeks ahead of survey receipt.
+1. **Sat-O-Meter Predictive Modelling** — Flagship statistical forecasting tool in MS Access ingesting three disparate operational streams (telemetry, historical 3-year survey text scrubs, and real-time call attributes) via Multi-Variate Non-Linear Regression & ARIMAX modeling to predict CSat scores within a $\pm 5\%$ variance window weeks ahead of survey receipt.
 2. **Multi-Factor Stack Ranking Framework (MSRF)** — Engineered a data-driven, weighted standard deviation algorithm to normalize performance evaluation across diverse operational workloads, task variations, and seasonal spikes for transparent multi-level productivity rollups (Agent → Team Lead → Manager).
 3. **Visual Queue Manager (VQM) Hardware/Software Architecture & Safety Governance** — Engineered a custom MS Access telemetry engine that processed 15-minute Avaya text dumps using Erlang-C Queuing Models (M/M/c) to calculate real-time queue capacity. Built an executive prototype, architected an isolated dedicated power cabling system bypassing main UPS backups, and secured quarterly electrical safety audit certifications with site admin engineers to power a 12-unit floor traffic light matrix (Red/Amber/Green) for 100+ self-organizing agents.
 4. **DBox (DataBox) End-to-End Architecture** — Coded a comprehensive MS Access platform for the EMEA EBox team to track online order exception root-causing (declines, inventory holds, EOL). Assigned weighted points across order queue clears, inbound calls, and offline emails to deliver transparent, real-time individual, team, and manager productivity rankings.
@@ -71,25 +71,25 @@
 
 ---
 
-### 📁 Featured Enterprise Case Studies (Dell Technologies)
+### Key Project Case Studies:
 
-📈 **[Project 09: Sat-O-Meter — Predictive CSat Analytics Engine](./09-Sat-O-Meter-Predictive-CSat-Engine/Case-Study.md)**
+* 📈 **[Project 09: Sat-O-Meter — Predictive CSat Analytics Engine](./09-Sat-O-Meter-Predictive-CSat-Engine/Case-Study.md)** <br>
    *Forecasted CSat scores within a \(\pm 5\%\) accuracy window 1–5 weeks ahead of official survey arrival using Avaya telemetry and regression modelling.*
 
-🚦 **[Project 10: Visual Queue Manager (VQM) — Hardware-Integrated Floor Telemetry](./10-Visual-Queue-Manager-VQM/Case-Study.md)**
+* 🚦 **[Project 10: Visual Queue Manager (VQM) — Hardware-Integrated Floor Telemetry](./10-Visual-Queue-Manager-VQM/Case-Study.md)** <br>
    *Engineered an MS Access engine controlling a 14-unit ceiling traffic light array via parallel-port PCB relays across 36+ regional order queues.*
 
-🛢️ **[Project 11: DBox — Order Processing & Quality Assurance Platform](./11-DBox-Order-Processing-QA-Ecosystem/Case-Study.md)**
+* 🛢️ **[Project 11: DBox — Order Processing & Quality Assurance Platform](./11-DBox-Order-Processing-QA-Ecosystem/Case-Study.md)** <br>
    *Architected an agile split-database ecosystem featuring 10% stratified QA sampling, 100% error rebooking loops, and SOX-Compliant data governance.*
 
-📝 **[Project 12: ABO CC CSat Engine — Scrubbing & Rapid Recovery](./12-ABO-CC-CSat-Scrubbing-Rapid-Recovery-Engine/Case-Study.md)**
+* 📝 **[Project 12: ABO CC CSat Engine — Scrubbing & Rapid Recovery](./12-ABO-CC-CSat-Scrubbing-Rapid-Recovery-Engine/Case-Study.md)** <br>
     *Automated FTP daily survey parsing, 24-hour SLA manager scrubbing, and closed-loop process trainer coaching feedback.*
 
-🏅 **[Project 13: Multi-Factor Stack Ranking Framework (MSRF)](./13-MSRF-Stack-Ranking-Framework/Case-Study.md)**
+* 🏅 **[Project 13: Multi-Factor Stack Ranking Framework (MSRF)](./13-MSRF-Stack-Ranking-Framework/Case-Study.md)** <br>
     *Created a mathematically sound \(Z\)-score performance ranking model that 'graded on a curve' across heterogeneous operational metrics.*
 
-📩 **[Project 14: Auto-Dunning Engine — Automated B2B Portfolio Alignment](./14-AutoDunning-Engine/Case-Study.md)**
+* 📩 **[Project 14: Auto-Dunning Engine — Automated B2B Portfolio Alignment](./14-AutoDunning-Engine/Case-Study.md)** <br>
    *Automated weekly B2B dunning nudges and mapped India collectors with US Account Managers to standardise AR outreach across enterprise accounts.*
 
-* 🖥️ **[Project 15: Q-Vision Wallboard — Real-Time Inbound Telephony Engine](./15-Q-Vision-Wallboard/Case-Study.md)**
-  * *Built a 12x5 real-time Avaya wallboard streaming to a ceiling-mounted 32" LED TV to prevent 3-minute system call drops during AMER shifts.*
+* 🖥️ **[Project 15: Q-Vision Wallboard — Real-Time Inbound Telephony Engine](./15-Q-Vision-Wallboard/Case-Study.md)** <br>
+  *Built a 12x5 real-time Avaya wallboard streaming to a ceiling-mounted 32" LED TV to prevent 3-minute system call drops during AMER shifts.*
