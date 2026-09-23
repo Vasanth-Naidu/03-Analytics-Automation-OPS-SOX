@@ -69,6 +69,27 @@
 * **Queuing Theory & Real-Time Telemetry:** Applying Erlang-C queuing models and live wallboard engine builds (Q-Vision) to telephony telemetry for floor capacity planning.
 * **SOX & CSA Control Custody:** Deep expertise in regulatory audit readiness, control framework execution, automated backup retention, and risk compliance.
 
-```
+---
 
-```
+### 📁 Featured Enterprise Case Studies (Dell Technologies)
+
+* 📈 **[Project 09: Sat-O-Meter — Predictive CSat Analytics Engine](./09-Sat-O-Meter-Predictive-CSat-Engine/Case-Study.md)**
+  * *Forecasted CSat scores within a \(\pm 5\%\) accuracy window 1–5 weeks ahead of official survey arrival using Avaya telemetry and regression modelling.*
+
+* 🚦 **[Project 10: Visual Queue Manager (VQM) — Hardware-Integrated Floor Telemetry](./10-Visual-Queue-Manager-VQM/Case-Study.md)**
+  * *Engineered an MS Access engine controlling a 14-unit ceiling traffic light array via parallel-port PCB relays across 36+ regional order queues.*
+
+* 🛢️ **[Project 11: DBox — Order Processing & Quality Assurance Platform](./11-DBox-Order-Processing-QA-Ecosystem/Case-Study.md)**
+  * *Architected an agile split-database ecosystem featuring 10% stratified QA sampling, 100% error rebooking loops, and SOX-Compliant data governance.*
+
+* 📝 **[Project 12: ABO CC CSat Engine — Scrubbing & Rapid Recovery](./12-ABO-CC-CSat-Scrubbing-Rapid-Recovery-Engine/Case-Study.md)**
+  * *Automated FTP daily survey parsing, 24-hour SLA manager scrubbing, and closed-loop process trainer coaching feedback.*
+
+* 🏅 **[Project 13: Multi-Factor Stack Ranking Framework (MSRF)](./13-MSRF-Stack-Ranking-Framework/Case-Study.md)**
+  * *Created a mathematically sound \(Z\)-score performance ranking model that 'graded on a curve' across heterogeneous operational metrics.*
+
+* 📩 **[Project 14: Auto-Dunning Engine — Automated B2B Portfolio Alignment](./14-AutoDunning-Engine/Case-Study.md)**
+  * *Automated weekly B2B dunning nudges and mapped India collectors with US Account Managers to standardise AR outreach across enterprise accounts.*
+
+* 🖥️ **[Project 15: Q-Vision Wallboard — Real-Time Inbound Telephony Engine](./15-Q-Vision-Wallboard/Case-Study.md)**
+  * *Built a 12x5 real-time Avaya wallboard streaming to a ceiling-mounted 32" LED TV to prevent 3-minute system call drops during AMER shifts.*
