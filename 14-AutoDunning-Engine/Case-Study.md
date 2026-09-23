@@ -18,6 +18,8 @@
 ## 1. Operational Problem & Business Impact:
 In the B2B Large Enterprise (LE) segment, customer accounts carry substantial credit lines and long-term strategic value. Prior to the Auto-Dunning Engine, operational friction stemmed from manual allocation and inconsistent approaches:
 
+![AutoDunning Process Standardization Workflow](./Assets/14-AutoDunning-Collections-Workflow.png)
+
 1. **High NVA Overhead:** Collectors and Team Leads spent valuable time at the start of every month manually pulling, sorting, and cleaning invoice reports to determine whom to contact.
 2. **Inconsistent Collection Strategies:** Each LE vertical operated independently. Agents frequently prioritised "easy" accounts or regular paying clients to meet short-term targets, pushing complex or difficult balances down the line.
 3. **Risk of Relationship Degradation:** Uncoordinated or overly frequent outreach risked burning bridges with sensitive enterprise clients. Outreach required an extremely respectful tone, recognising that over 40% of B2B clients pay automatically and others merely require a timely courtesy notice.
@@ -26,6 +28,8 @@ In the B2B Large Enterprise (LE) segment, customer accounts carry substantial cr
 
 ## 2. System Architecture & Dunning Logic:
 The Auto-Dunning Engine operates as a centralised, weekly dunning process in MS Access:
+
+![AutoDunning System Architecture](./Assets/14-AutoDunning-System-Architecture.png)
 
 ```text
 ┌──────────────────────────────────────────────┐     ┌──────────────────────────────────────────────┐
@@ -47,6 +51,8 @@ The Auto-Dunning Engine operates as a centralised, weekly dunning process in MS 
 
 *Note: All notices are framed as polite payment schedule summaries (Heads-up), never aggressive demands or reminder letters. B2B clients receive no payment links as standard corporate payment channels are already established.*
 
+![AutoDunning B2B Milestone Matrix](./Assets/14-AutoDunning-Aging-Matrix.png)
+
 | Milestone Window | Client Communication Trigger (1 Week Prior) | India GFS Collector Role | US GFS Account Manager Role |
 | --- | --- | --- | --- |
 | **30 Days** | Automated Courtesy Heads-up Email | System-driven tracking; no manual call required. | Mapped on email footer for transparency. |
@@ -63,9 +69,13 @@ The Auto-Dunning Engine operates as a centralised, weekly dunning process in MS 
 * **Module 3: Weekly Automated Workload Allocator:** Replaces manual daily spreadsheet filtering. Every week, the dunning engine auto-populates clean, pre-sorted Excel portfolio lists for India collection agents and Team Leads, eliminating NVA prep work at month-start.
 * **Module 4: Admin Oversight & System Health Summary:** An administrative panel within MS Access (managed solely by the End-to-End Automation Lead) providing weekly diagnostic reports on total invoice pool volume, eligibility counts, email dispatch logs, and milestone bucket distribution.
 
+
+
 ---
 
 ## 4. Measurable Business Results & Operational Impact:
+
+![AutoDunning Admin Oversight Panel](./Assets/14-AutoDunning-Executive-Dashboard.png)
 
 | Operational Dimension | 🛑 Legacy Manual Process | 🎯 Auto-Dunning Engine | 💡 Operational Impact |
 | --- | --- | --- | --- |
@@ -83,5 +93,6 @@ The Auto-Dunning Engine operates as a centralised, weekly dunning process in MS 
 * **End-to-End Database & Mail Automation:** Architecture in MS Access, SQL, and VBA integrating Outlook mailers and employee database cross-referencing.
 * **Strategic Process Standardised:** Harmonising disparate, team-specific operational methods into a single enterprise-grade workflow.
 * **Cross-Border Leadership & Collaboration:** Orchestrating seamless operational handovers between Dell India GFS collectors and US WHEM Account Managers.
+
 
 ---
