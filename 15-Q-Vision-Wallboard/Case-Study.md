@@ -35,8 +35,9 @@ In the GFS WHEM B2B segment, inbound calls are generated when enterprise clients
 ---
 
 ## 2. System Architecture & Intra-day Flow:
-
 The Q-Vision Wall-board functions as a direct, zero-storage pass-through display loop running 12x5:
+
+![Q-Vision System Architecture](./Assets/15-QVision-System-Architecture.png)
 
 ```text
 ┌──────────────────────────────────────────────┐     ┌──────────────────────────────────────────────┐
@@ -62,6 +63,8 @@ The Q-Vision Wall-board functions as a direct, zero-storage pass-through display
 | **Warning** | 03-05 Calls Waiting | Wait 60s-120s | **Vibrant Amber Yellow** | Agents voluntarily wrap up AUX documentation and defer non-urgent breaks. |
 | **Critical** | Calls Waiting > 05 | Wait > 120s | **Flashing Crimson Red** | **Immediate Intervention:** Leads & available agents take immediate calls before 3-min drop. |
 
+![Q-Vision 3-Minute Drop Threshold Matrix](./Assets/15-QVision-Intraday-SLA-Thresholds.png)
+
 ---
 
 ## 3. Operational Modules:
@@ -70,6 +73,8 @@ The Q-Vision Wall-board functions as a direct, zero-storage pass-through display
 * **Module 2: 3-Minute Call Drop Guard Engine:** Monitors the exact wait duration of every incoming call, triggering high-visibility alerts as calls approach the critical 180-second drop boundary.
 * **Module 3: Staffing & AUX State Tracker:** Displays real-time counts of agents currently **In-Call**, **Available**, or in **AUX (Documentation/ Break)**, encouraging floor-wide accountability.
 * **Module 4: High-Visibility 32-Inch TV UI Renderer:** A clean, high-contrast user interface engineered specifically for long-distance legibility across 32-inch ceiling-mounted LED screens.
+
+![Q-Vision Ceiling-Mounted LED Wallboard UI](./Assets/15-QVision-LED-Display-Dashboard.png)
 
 ---
 
@@ -80,7 +85,9 @@ The Q-Vision Wall-board functions as a direct, zero-storage pass-through display
 | **Queue Visibility** | Metrics hidden inside Team Lead Avaya screens | **100% Floor Transparency via 32" Overhead LED TV** | Universal awareness across all collectors, leads, and floor managers. |
 | **Call Drop Prevention** | High call drops after 3-minute wait mark | **Zero 3-minute call drops via proactive visual alerts** | Protected B2B customer relationships and eliminated Global WFM review escalations. |
 | **AUX & Break Management** | Uncoordinated breaks causing staffing deficits | **Organic floor self-regulation during volume spikes** | Agents voluntarily pause documentation AUX states the moment yellow/red alerts appear. |
-| **Implementation Speed** | Months of WFM reviews and manual reporting | **Turned around in 1 weekend using existing floor hardware** | Zero capex; desktop display connection running a lightweight 12x5 render loop. |
+| **Implementation Speed** | Months of WFM reviews and manual reporting | **Turned around in 1 weekend using existing floor hardware** | Zero CapEx; desktop display connection running a lightweight 12x5 render loop. |
+
+![Q-Vision Floor Transformation & Self-Regulation](./Assets/15-QVision-Floor-Self-Regulation.png)
 
 ---
 
