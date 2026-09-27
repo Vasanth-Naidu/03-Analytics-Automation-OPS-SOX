@@ -1,3 +1,5 @@
+**[🏠 Home](https://github.com/Vasanth-Naidu)** 
+
 # Portfolio Module 03: Dual-Hatting Operations Management, Ground-Up Automation & SOX Governance (Dell)
 
 ## Executive Summary:
