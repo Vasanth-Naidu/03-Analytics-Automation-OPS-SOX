@@ -1,3 +1,5 @@
+**[🏠 Home](https://github.com/Vasanth-Naidu)**   |   **[↩️ Back to Repository](https://github.com/Vasanth-Naidu/03-Analytics-Automation-OPS-SOX)**
+
 # 📊 Project 09: Sat-O-Meter — Predictive Customer Satisfaction (CSat) & Telemetry Analytics Engine
 
 ## Executive Overview:
@@ -80,3 +82,5 @@ To bridge the feedback gap, **Sat-O-Meter** ingested three distinct operational 
 * **Proactive Quality Management:** Transforming quality assurance from an audit function into a predictive customer retention engine.
 
 ---
+
+**[🏠 Home](https://github.com/Vasanth-Naidu)**   |   **[↩️ Back to Repository](https://github.com/Vasanth-Naidu/03-Analytics-Automation-OPS-SOX)**
