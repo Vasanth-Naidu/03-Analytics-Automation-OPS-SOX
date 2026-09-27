@@ -1,3 +1,5 @@
+**[🏠 Home](https://github.com/Vasanth-Naidu)**   |   **[↩️ Back to Repository](https://github.com/Vasanth-Naidu/03-Analytics-Automation-OPS-SOX)**
+
 # 📊 Project 10: Visual Queue Manager (VQM) — Hardware-Integrated Automated Floor Telemetry & Physical Traffic Light Control Engine
 
 ## Executive Overview:
@@ -8,7 +10,7 @@
 * **Impact & Key Deliverables:**
   * **Lean Velocity Optimisation:** Enabled the floor to hit the 0-to-1 hour Velocity metric with zero backlog across 36+ regional queues.
   * **Mathematical Queue Thresholds:** Automated real-time Required OPH (Orders Per Hour) calculations ($y2 = x1/x2$) against target production baselines ($y1$), controlling agent batch-pulling behaviour (1, 3, or 5 orders at a time).
-  * **Hardware-Driven Visual Control:** Architected and phased a 14-unit physical ceiling traffic light matrix across the floor, driving self-organizing agent break and work discipline.
+  * **Hardware-Driven Visual Control:** Architected and phased a 14-unit physical ceiling traffic light matrix across the floor, driving self-organising agent break and work discipline.
   * **Frugal Innovation & High ROI:** Delivered enterprise-grade, floor-wide visual control using custom PCB relays and parallel-port triggers at a fraction of commercial display costs, executing a controlled 3-phase rollout from pilot to full 14-unit deployment.
   * **Enterprise Infrastructure & Governance:** Secured executive POC approvals, engineered an isolated power distribution system bypassing corporate UPS backups, and passed quarterly electrical, fire, and safety department audits.
 * **Core Stack:** MS Access (Custom GUI & Logic Engine), Order Broker API/Staging, GEDIS, Avaya CMS Supervisor, LPT Parallel Port Hardware I/O, Custom PCB Relay Circuit, 230V Ceiling Light Matrix.
@@ -120,3 +122,5 @@ Coded low-level I/O routines sending bitwise signals through the PC parallel pri
 * **Cross-Functional Governance & Frugal Innovation:** Securing executive approvals, executing a phased deployment, and maintaining quarterly electrical/fire safety audit sign-offs while delivering high-impact solutions with minimal CapEx.
 
 ---
+
+**[🏠 Home](https://github.com/Vasanth-Naidu)**   |   **[↩️ Back to Repository](https://github.com/Vasanth-Naidu/03-Analytics-Automation-OPS-SOX)**
