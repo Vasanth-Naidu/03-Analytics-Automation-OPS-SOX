@@ -1,4 +1,6 @@
-# Project 11: DBox (Data Box) — Operations & Quality Assurance Management Platform:
+**[🏠 Home](https://github.com/Vasanth-Naidu)**   |   **[↩️ Back to Repository](https://github.com/Vasanth-Naidu/03-Analytics-Automation-OPS-SOX)**
+
+# 🛡️Project 11: DBox (Data Box) — Operations & Quality Assurance Management Platform:
 
 ## Executive Overview:
 
@@ -6,7 +8,7 @@
 * **Role:** Operations Manager & End-to-End Systems Architect, Developer, Deployment & Maintenance Lead
 * **Core Value Delivered:** Engineered an agile, closed-loop MS Access ecosystem that integrated online order entry, multi-tier QA and rebooking workflows, automated sampling, and advanced Pareto root-cause analytics into a single unified architecture.
 * **Impact & Key Deliverables:**
-  * Architecturalized and deployed an agile, end-to-end MS Access ecosystem featuring specialised operational interfaces (Order Entry, QA, Rebooking, Trainer Audit, Search, Admin, Maintenance) and real-time leadership analytics dashboards.
+  * Architecturalised and deployed an agile, end-to-end MS Access ecosystem featuring specialised operational interfaces (Order Entry, QA, Rebooking, Trainer Audit, Search, Admin, Maintenance) and real-time leadership analytics dashboards.
   * Designed and coded a multi-tier closed-loop feedback engine that automates 10% stratified sampling for QA, 100% error-routing to Rebooking and Process Trainers, and 5% Level-2 "QA of QA" audits to power precision retraining.
   * Enforced enterprise-grade data governance, role-based access security, and continuous SOX compliance through scheduled background utilities and audit-ready reporting.
 * **Core Stack:** MS Access (Split Architecture), VBA, DAO, SQL, Windows Task Scheduler/ Background Utilities, Stratified Sampling Algorithms.
@@ -140,3 +142,5 @@ Built using a robust split-database model (1 central back-end DB connected to a 
 
 
 ---
+
+**[🏠 Home](https://github.com/Vasanth-Naidu)**   |   **[↩️ Back to Repository](https://github.com/Vasanth-Naidu/03-Analytics-Automation-OPS-SOX)**
