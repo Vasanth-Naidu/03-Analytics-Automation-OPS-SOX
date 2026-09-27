@@ -95,3 +95,7 @@
 
 * 🖥️ **[Project 15: Q-Vision Wallboard — Real-Time Inbound Telephony Engine](./15-Q-Vision-Wallboard/Case-Study.md)** <br>
   *Built a 12x5 real-time Avaya wallboard streaming to a ceiling-mounted 32" LED TV to prevent 3-minute system call drops during AMER shifts.*
+
+---
+
+**[🏠 Home](https://github.com/Vasanth-Naidu)** 
