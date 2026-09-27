@@ -1,4 +1,6 @@
-# Project 12: ABO CC CSat Scrubbing & Rapid Recovery Engine
+**[🏠 Home](https://github.com/Vasanth-Naidu)**   |   **[↩️ Back to Repository](https://github.com/Vasanth-Naidu/03-Analytics-Automation-OPS-SOX)**
+
+# 🕵️‍♂️Project 12: ABO CC CSat Scrubbing & Rapid Recovery Engine
 
 ## Executive Overview:
 
@@ -108,3 +110,7 @@ Engineered in MS Access using a modular VBA/DAO model designed for high-speed pr
 * **Customer Experience (CX) Governance:** Closed-loop recovery frameworks, 24-hour SLA enforcement, and root-cause categorisation.
 * **Closed-Loop Quality & Training Architecture:** Error driver extraction, targeted 1x1 coaching integration, and floor refresher program design.
 * **Process Optimisation & Analytics:** Employee roster cross-referencing, Pareto analysis, qualitative feedback structuring, and executive reporting.
+
+---
+
+**[🏠 Home](https://github.com/Vasanth-Naidu)**   |   **[↩️ Back to Repository](https://github.com/Vasanth-Naidu/03-Analytics-Automation-OPS-SOX)**
