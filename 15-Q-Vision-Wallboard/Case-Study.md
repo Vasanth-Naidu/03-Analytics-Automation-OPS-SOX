@@ -1,3 +1,5 @@
+**[🏠 Home](https://github.com/Vasanth-Naidu)**   |   **[↩️ Back to Repository](https://github.com/Vasanth-Naidu/03-Analytics-Automation-OPS-SOX)**
+
 # 🖥️ Project 15: Q-Vision Wallboard — Real-Time Inbound Telephony & Intra-day Queue Health Engine
 
 ## Executive Overview:
@@ -98,3 +100,5 @@ The Q-Vision Wall-board functions as a direct, zero-storage pass-through display
 * **Visual Management & Nudge Psychology:** Designing simple visual cues that drive frontline self-regulation without supervisory friction.
 
 ---
+
+**[🏠 Home](https://github.com/Vasanth-Naidu)**   |   **[↩️ Back to Repository](https://github.com/Vasanth-Naidu/03-Analytics-Automation-OPS-SOX)**
