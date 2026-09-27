@@ -1,4 +1,6 @@
-# 📊 Project 14: Auto-Dunning Engine — Automated B2B Accounts Receivable Portfolio Alignment & Nudge Engine
+**[🏠 Home](https://github.com/Vasanth-Naidu)**   |   **[↩️ Back to Repository](https://github.com/Vasanth-Naidu/03-Analytics-Automation-OPS-SOX)**
+
+# 🔔 Project 14: Auto-Dunning Engine — Automated B2B Accounts Receivable Portfolio Alignment & Nudge Engine
 
 ## Executive Overview:
 
@@ -18,7 +20,7 @@
 ## 1. Operational Problem & Business Impact:
 In the B2B Large Enterprise (LE) segment, customer accounts carry substantial credit lines and long-term strategic value. Prior to the Auto-Dunning Engine, operational friction stemmed from manual allocation and inconsistent approaches:
 
-![AutoDunning Process Standardization Workflow](./Assets/14-AutoDunning-Collections-Workflow.png)
+![AutoDunning Process Standardisation Workflow](./Assets/14-AutoDunning-Collections-Workflow.png)
 
 1. **High NVA Overhead:** Collectors and Team Leads spent valuable time at the start of every month manually pulling, sorting, and cleaning invoice reports to determine whom to contact.
 2. **Inconsistent Collection Strategies:** Each LE vertical operated independently. Agents frequently prioritised "easy" accounts or regular paying clients to meet short-term targets, pushing complex or difficult balances down the line.
@@ -94,5 +96,6 @@ The Auto-Dunning Engine operates as a centralised, weekly dunning process in MS 
 * **Strategic Process Standardised:** Harmonising disparate, team-specific operational methods into a single enterprise-grade workflow.
 * **Cross-Border Leadership & Collaboration:** Orchestrating seamless operational handovers between Dell India GFS collectors and US WHEM Account Managers.
 
-
 ---
+
+**[🏠 Home](https://github.com/Vasanth-Naidu)**   |   **[↩️ Back to Repository](https://github.com/Vasanth-Naidu/03-Analytics-Automation-OPS-SOX)**
