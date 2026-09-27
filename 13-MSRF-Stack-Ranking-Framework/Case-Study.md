@@ -1,3 +1,5 @@
+**[🏠 Home](https://github.com/Vasanth-Naidu)**   |   **[↩️ Back to Repository](https://github.com/Vasanth-Naidu/03-Analytics-Automation-OPS-SOX)**
+
 # 📊 Project 13: Multi-Factor Stack Ranking Framework (MSRF) — Homogenised, Rationalised & Commensurated Team Performance Ranking
 
 ## Executive Overview:
@@ -60,10 +62,10 @@ Where:
 * $\sigma$ = Standard deviation of the peer cohort
 * $\pm 3.0$ = Boundary caps to block extreme outlier gaming
 
-![MSRF Statistical Normalization Curve](./Assets/13-MSRF-Statistical-Normalization-Curve.png)
+![MSRF Statistical Normalisation Curve](./Assets/13-MSRF-Statistical-Normalization-Curve.png)
 
 ### The 3 Core Rules Built Into the Engine:
-1. **Directional Logic:** Flipped orientation automatically—recognising that for **CSAT/Quality**, *higher is better*, whereas for **Handle Time**, *lower is better*.
+1. **Directional Logic:** Flipped orientation automatically—recognising that for **CSAT/ Quality**, *higher is better*, whereas for **Handle Time**, *lower is better*.
 2. **Peer-Group Normalisation ($Z$-Score):** Rather than evaluating raw scores, it measured standard deviation distances above or below the cohort mean for agents performing identical work types.
 3. **Outlier Safety Capping:** Bounded extreme values (between $-3.0\sigma$ and $+3.0\sigma$), ensuring overachievement on a single metric could not mask failure in customer satisfaction.
 
@@ -127,5 +129,6 @@ A core driver of MSRF's success was how the analytics team approached change man
 * **Strategic Change Management & Leadership:** Driving bottom-up floor adoption, demystifying complex statistics for non-technical teams, and securing executive endorsement.
 * **Automation & Enterprise Reporting:** Building automated analytics pipelines in Excel, VBA, and SQL to support multi-level leadership roll-ups.
 
+---
 
-
+**[🏠 Home](https://github.com/Vasanth-Naidu)**   |   **[↩️ Back to Repository](https://github.com/Vasanth-Naidu/03-Analytics-Automation-OPS-SOX)**
